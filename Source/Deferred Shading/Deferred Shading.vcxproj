@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C3ADC2B-BB80-4CEE-BE74-5607B8C33F0B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DeferredShading</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;dxerr.lib;dinput8.lib;dxguid.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;dxerr.lib;dinput8.lib;dxguid.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AngleConvert.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="DirectoryFunctions.cpp" />
+    <ClCompile Include="DX11Camera.cpp" />
+    <ClCompile Include="DX11Cube.cpp" />
+    <ClCompile Include="DX11DeferredDirLightSet.cpp" />
+    <ClCompile Include="DX11DeferredPointSet.cpp" />
+    <ClCompile Include="DX11DrawState.cpp" />
+    <ClCompile Include="DX11Graphics.cpp" />
+    <ClCompile Include="DX11Icosahedron.cpp" />
+    <ClCompile Include="DX11Input.cpp" />
+    <ClCompile Include="DX11ObjMesh.cpp" />
+    <ClCompile Include="DX11Quad.cpp" />
+    <ClCompile Include="DX11Shader.cpp" />
+    <ClCompile Include="DX11Shape.cpp" />
+    <ClCompile Include="DX11TexSampler.cpp" />
+    <ClCompile Include="DX11Texture.cpp" />
+    <ClCompile Include="DX11TexturePool.cpp" />
+    <ClCompile Include="DX11Timer.cpp" />
+    <ClCompile Include="DX11Transform.cpp" />
+    <ClCompile Include="DX11TypelessConstantBuffer.cpp" />
+    <ClCompile Include="DXGBuffer.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainState.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="PolarCartConversion.cpp" />
+    <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="SpotLight.cpp" />
+    <ClCompile Include="WindowsWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AngleConvert.h" />
+    <ClInclude Include="DX11DeferredPointLightSet.h" />
+    <ClInclude Include="DirectionalLight.h" />
+    <ClInclude Include="DirectoryFunctions.h" />
+    <ClInclude Include="DX11Camera.h" />
+    <ClInclude Include="DX11Cone.h" />
+    <ClInclude Include="DX11ConstantBuffer.h" />
+    <ClInclude Include="DX11Cube.h" />
+    <ClInclude Include="DX11DeferredDirLightSet.h" />
+    <ClInclude Include="DX11DrawState.h" />
+    <ClInclude Include="DX11Graphics.h" />
+    <ClInclude Include="DX11Icosahedron.h" />
+    <ClInclude Include="DX11Input.h" />
+    <ClInclude Include="DX11LightSet.h" />
+    <ClInclude Include="DX11MassLightSet.h" />
+    <ClInclude Include="DX11ObjMesh.h" />
+    <ClInclude Include="DX11Quad.h" />
+    <ClInclude Include="DX11Shader.h" />
+    <ClInclude Include="DX11Shape.h" />
+    <ClInclude Include="DX11TexSampler.h" />
+    <ClInclude Include="DX11Texture.h" />
+    <ClInclude Include="DX11TexturePool.h" />
+    <ClInclude Include="DX11Timer.h" />
+    <ClInclude Include="DX11Transform.h" />
+    <ClInclude Include="DX11TypelessConstantBuffer.h" />
+    <ClInclude Include="DX11VertexInputLayout.h" />
+    <ClInclude Include="DXGBuffer.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GraphicsManager.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="MainState.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="NonCopyable.h" />
+    <ClInclude Include="PointLight.h" />
+    <ClInclude Include="PolarCartConversion.h" />
+    <ClInclude Include="Pool.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="SmartPointer.h" />
+    <ClInclude Include="SpotLight.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Vec2.h" />
+    <ClInclude Include="Vec3.h" />
+    <ClInclude Include="Vec4.h" />
+    <ClInclude Include="WindowsWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeferredDirLightShader.fx" />
+    <None Include="DeferredLightHelper.txt" />
+    <None Include="DeferredPointLightShader.fx" />
+    <None Include="DeferredShader.fx" />
+    <None Include="ForwardShader.fx" />
+    <None Include="LightHelper.fx" />
+    <None Include="NullShader.fx" />
+    <None Include="TestShader.fx" />
+    <None Include="ToDo.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

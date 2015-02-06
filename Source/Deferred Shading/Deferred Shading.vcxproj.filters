@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DXGBuffer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainState.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsWindow.cpp">
+      <Filter>Source\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11DrawState.cpp">
+      <Filter>Source\DXOverrides</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Graphics.cpp">
+      <Filter>Source\DXOverrides</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Timer.cpp">
+      <Filter>Source\DXOverrides</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Input.cpp">
+      <Filter>Source\DXOverrides</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Camera.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11ObjMesh.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11TexSampler.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Texture.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11TexturePool.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Transform.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11TypelessConstantBuffer.cpp">
+      <Filter>Source\DXUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="PolarCartConversion.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaternion.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11DeferredDirLightSet.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11DeferredPointSet.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Shader.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="AngleConvert.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectoryFunctions.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Cube.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Icosahedron.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Quad.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="DX11Shape.cpp">
+      <Filter>Source\Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLight.cpp">
+      <Filter>Source\Lights and Shaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DXGBuffer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MainState.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="AngleConvert.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec4.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec3.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Pool.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPointer.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="NonCopyable.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="PolarCartConversion.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWindow.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsManager.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11DeferredDirLightSet.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11DeferredPointLightSet.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11LightSet.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Shader.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Headers\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Cone.h">
+      <Filter>Headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Cube.h">
+      <Filter>Headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Icosahedron.h">
+      <Filter>Headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Quad.h">
+      <Filter>Headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Shape.h">
+      <Filter>Headers\Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectoryFunctions.h">
+      <Filter>Headers\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Graphics.h">
+      <Filter>Headers\DXOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Input.h">
+      <Filter>Headers\DXOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Timer.h">
+      <Filter>Headers\DXOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11DrawState.h">
+      <Filter>Headers\DXOverrides</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Camera.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11ConstantBuffer.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11TexSampler.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Texture.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11TexturePool.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11Transform.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11TypelessConstantBuffer.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11VertexInputLayout.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11MassLightSet.h">
+      <Filter>Headers\Lights and Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DX11ObjMesh.h">
+      <Filter>Headers\DXUtil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeferredDirLightShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="DeferredLightHelper.txt">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="DeferredPointLightShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="DeferredShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ForwardShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="LightHelper.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="NullShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="TestShader.fx">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4adeb7a1-e083-43a8-9b52-f2c9a58c7b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{5f44a00a-b32c-4ec5-9287-5cff4e13b937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{a4c4689e-dfae-41de-b930-8774df9de671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Utility">
+      <UniqueIdentifier>{ac097bd7-659d-42c2-a4a3-595ce9bbd029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Lights and Shaders">
+      <UniqueIdentifier>{7a41ec30-aa11-4436-a90e-0d777798e2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Primitives">
+      <UniqueIdentifier>{055d062c-e908-4d89-b432-4058d1518317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\DXUtil">
+      <UniqueIdentifier>{9333f5a7-8311-4e22-bf1d-977151a7852d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\DXOverrides">
+      <UniqueIdentifier>{db69d9ca-d299-43ea-aa55-fb05bcbc4da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Base">
+      <UniqueIdentifier>{044467af-7fd9-4699-ac14-d48c947c48ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Base">
+      <UniqueIdentifier>{c523bf46-dc50-4fbb-8cc2-0b1c3e98c41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DXOverrides">
+      <UniqueIdentifier>{d0f65ae7-384a-4fbe-94bd-76586915b5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DXUtil">
+      <UniqueIdentifier>{3596ed10-a4d5-4579-a929-940bec9f0efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{83324e76-023c-455d-a505-1bc727897d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Lights and Shaders">
+      <UniqueIdentifier>{f3a736a7-f8b1-429b-a586-b7fd8b0bdb99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Primitives">
+      <UniqueIdentifier>{36071d60-4133-4f45-9b0d-d55e66a8b1b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
